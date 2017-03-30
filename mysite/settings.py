@@ -25,7 +25,7 @@ SECRET_KEY = 'zmgjm)z196#oa3)k(-rq5p0xx0h!9)o285&=f&hgil5mxd$5kz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hubikus.pythonanywhere.com',]
 
 
 # Application definition
