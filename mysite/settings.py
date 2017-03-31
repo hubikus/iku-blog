@@ -25,7 +25,10 @@ SECRET_KEY = 'zmgjm)z196#oa3)k(-rq5p0xx0h!9)o285&=f&hgil5mxd$5kz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hubikus.pythonanywhere.com',]
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'hubikus.pythonanywhere.com',
+]
 
 
 # Application definition
@@ -38,7 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'rest_framework',
+    'rmanager',
 ]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
