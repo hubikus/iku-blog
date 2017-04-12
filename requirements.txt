@@ -2,3 +2,5 @@ django==1.8
 djangorestframework==3.6.2
 whitenoise==3.3.0
 celery==4.0.2
+django-celery-results==1.0.1
+redis==2.10.5
